@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+
+  --animate-showAccordion : showAccordion .5s ease-in-out forwards;
+  --font-irsans : 'irsans';
+  --font-irsansLight : 'irsansLight';
+
+
+  @keyframes showAccordion {
+    0%  {
+     transform : translateY(-100%);
+     position: absolute;
+     top : -0;
+     opacity:0;
+    }
+    100%  {
+      transform : translateY(0%);
+      top : 20;
+      opacity:1;
+    }
+  }
+  
+  
+}
+
+@font-face {
+  font-family: 'irsans' ;
+  src: url('./assets/fonts/IRANSansWebBold.woff2') format(woff2);
+}
+@font-face {
+  font-family: 'irsansLight' ;
+  src: url('./assets/fonts/IRANSansWebLight.woff2') format(woff2);
+}
+
+
